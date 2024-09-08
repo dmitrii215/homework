@@ -1,10 +1,9 @@
-grades=[[5,3,3,5,4],[2,2,2,3],[4,5,5,2],[4,4,3,],[5,5,5,4,5]]
-studens={'Johnni','Bilbo','Steve','khendrik','aaron'}
+'''множества'''
+a= {1, 2, 3, 3, 4, 4, 5, False, 'str'}
+print(a)
 
-grades_a = [sum(grades[0])/len(grades[0]), sum(grades[1])/len(grades[1]), sum(grades[2])/len(grades[2]),
-            sum(grades[3])/len(grades[3]), sum(grades[4])/len(grades[4])]
+b = {1, 2, 3, True, (1, 2, 3)}
+print(b)
 
-studens_sort = sorted(studens)
-
-dict1 = dict(zip(studens_sort,grades_a))
-print(dict1)
+list = [1, 2, 3, 4]
+print(set(list))
