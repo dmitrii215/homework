@@ -14,4 +14,4 @@ elif a != b == c or a == b != c or b == a != c:
     print (2)
 
 else:
-    print(1)
+    print(0)
