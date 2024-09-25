@@ -32,7 +32,7 @@ class House:
             self.nFloors += value
         elif isinstance(value, House):
             self.nFloors += value.nFloors
-            return self
+        return self
     def __iadd__(self, other: int):
         return self.__add__(other)
     def __radd__(self, other):
