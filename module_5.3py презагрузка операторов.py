@@ -23,15 +23,15 @@ class House:
 
     def __eq__(self, other):
         if isinstance(other, House):
-            return self.number_of_floors == other.number_of_floors
+            return self.nFloors == other.nFloors
         elif isinstance(other, int):
-            return self.number_of_floors == other
+            return self.nFloors == other
 
     def __add__(self, value):
         if isinstance(value, int):
-            self.number_of_floors += value
+            self.nFloors += value
         elif isinstance(value, House):
-            self.number_of_floors += value.number_of_floors
+            self.nFloors += value.nFloors
             return self
     def __iadd__(self, other: int):
         return self.__add__(other)
@@ -39,9 +39,9 @@ class House:
         return self.__add__(other)
     def __lt__(self, other):
         if isinstance(other, House):
-            return self.number_of_floors < other
+            return self.nFloors < other
         elif isinstance((other, int)):
-            return self.number_of_floors < other
+            return self.nFloors < other
     def __le__(self, other):
         return self.__eq__(other) or self.__lt__(other)
     def __gt__(self, other):
@@ -57,27 +57,25 @@ def main():
 
     print(h1)
     print(h2)
-#
-#     print(h1 == h2)  # __eq__
-#
-#     h1 = h1 + 10  # __add__
-#     print(h1)
-#     print(h1 == h2)
-#
-#     h1 += 10  # __iadd__
-#     print(h1)
-#
-#     h2 = 10 + h2  # __radd__
-#     print(h2)
-#
-#     print(h1 > h2)  # __gt__
-#     print(h1 >= h2)  # __ge__
-#     print(h1 < h2)  # __lt__
-#     print(h1 <= h2)  # __le__
-#     print(h1 != h2)  # __ne__
-#
-#
-# if __name__ == '__main__':
-#     main()
 
+    print(h1 == h2)  # __eq__
+
+    h1 = h1 + 10  # __add__
+    print(h1)
+    print(h1 == h2)
+
+    h1 += 10  # __iadd__
+    print(h1)
+
+    h2 = 10 + h2  # __radd__
+    print(h2)
+
+    print(h1 > h2)  # __gt__
+    print(h1 >= h2)  # __ge__
+    print(h1 < h2)  # __lt__
+    print(h1 <= h2)  # __le__
+    print(h1 != h2)  # __ne_
+
+if __name__ == '__main__':
+    main()
 
