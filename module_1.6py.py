@@ -5,10 +5,13 @@ print(my_dict)
 
 print(my_dict['Дмитрий'])
 
+print(my_dict.get('Маша'),': None')
+
 my_dict.update({'Паша': 1988, 'Катя': 2002})
 print(my_dict)
 
-del my_dict['Маша']
+print(my_dict.pop('Маша'))
+
 print(my_dict)
 
 '''множества'''
